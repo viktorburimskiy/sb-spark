@@ -1,0 +1,9 @@
+[debug] Packaging D:\Document\Training\spark_for_de\laba03\data_mart\target\scala-2.11\data_mart_2.11-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	data_mart$.class
+[debug] 	  D:\Document\Training\spark_for_de\laba03\data_mart\target\scala-2.11\classes\data_mart$.class
+[debug] 	data_mart$delayedInit$body.class
+[debug] 	  D:\Document\Training\spark_for_de\laba03\data_mart\target\scala-2.11\classes\data_mart$delayedInit$body.class
+[debug] 	data_mart.class
+[debug] 	  D:\Document\Training\spark_for_de\laba03\data_mart\target\scala-2.11\classes\data_mart.class
+[debug] Done packaging.
