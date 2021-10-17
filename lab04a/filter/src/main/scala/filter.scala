@@ -25,10 +25,11 @@ object filter {
 
     val kafka_json = kafka.select(col("value").cast("string"))
 
-    val df: DataFrame = spark.read.json(kafka_json.toJSON)
+    val df: DataFrame = spark.read.json(kafka_json)
     //to_utc_timestamp( to_timestamp(col("timestamp")/ 1000), "UTC")
     //from_unixtime(col("timestamp") / 1000)
-    val df_all = df.select(col("*") ,date_format(to_date(to_utc_timestamp( to_timestamp(col("timestamp")/ 1000), "UTC"), "yyyy-MM-dd"), "yyyyMMdd").as("date"))
+    val df_all = df.select(col("*"), date_format(to_utc_timestamp(to_timestamp(col("timestamp")/ 1000), "UTC"), "yyyyMMdd").as("data"))
+    //val df_all = df.select(col("*") ,date_format(to_date(to_utc_timestamp( to_timestamp(col("timestamp")/ 1000), "UTC"), "yyyy-MM-dd"), "yyyyMMdd").as("date"))
     val df_buy = df_all.filter(col("event_type") === "buy")
     val df_view = df_all.filter(col("event_type") === "view")
 
