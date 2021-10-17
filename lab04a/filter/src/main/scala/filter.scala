@@ -8,9 +8,13 @@ object filter {
       .appName("lab04a")
       .getOrCreate()
 
-    val offset = spark.conf.get("spark.filter.offset")
+    var offset = spark.conf.get("spark.filter.offset")
     val topic = spark.conf.get("spark.filter.topic_name")
     val dir = spark.conf.get("spark.filter.output_dir_prefix")
+
+    if (offset != "ealiest") {
+      offset = s"""{"$topic":{"0":$offset}}"""
+    }
 
     val kafkaParams = Map(
       "kafka.bootstrap.servers" -> "spark-master-1:6667",
