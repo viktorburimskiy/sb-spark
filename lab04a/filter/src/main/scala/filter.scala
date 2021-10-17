@@ -1,5 +1,8 @@
+import org.apache.spark.SparkContext
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
+
+import scala.collection.mutable.ListBuffer
 
 object filter {
   def main(args: Array[String]): Unit = {
@@ -7,6 +10,8 @@ object filter {
       .builder()
       .appName("lab04a")
       .getOrCreate()
+
+    import spark.implicits._
 
     var offset = spark.conf.get("spark.filter.offset")
     val topic = spark.conf.get("spark.filter.topic_name")
@@ -22,10 +27,10 @@ object filter {
       "startingOffsets" -> offset
     )
     val kafka = spark.read.format("kafka").options(kafkaParams).load
+    val kafka_json = kafka.select(col("value").cast("string")).rdd
+    val kafka_st = kafka_json.map(_.mkString(","))
+    val df: DataFrame = spark.read.json(kafka_st.toDS())
 
-    val kafka_json = kafka.select(col("value").cast("string"))
-
-    val df: DataFrame = spark.read.json(kafka_json)
     //to_utc_timestamp( to_timestamp(col("timestamp")/ 1000), "UTC")
     //from_unixtime(col("timestamp") / 1000)
     val df_all = df.select(col("*"), date_format(to_utc_timestamp(to_timestamp(col("timestamp")/ 1000), "UTC"), "yyyyMMdd").as("data"))
