@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /data/home/victor.burimskiy/sb-spark/lab04b/agg/target/scala-2.11/agg_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	agg$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /data/home/victor.burimskiy/sb-spark/lab04b/agg/target/scala-2.11/classes/agg$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	agg$$anonfun$killAll$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /data/home/victor.burimskiy/sb-spark/lab04b/agg/target/scala-2.11/classes/agg$$anonfun$killAll$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	agg.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /data/home/victor.burimskiy/sb-spark/lab04b/agg/target/scala-2.11/classes/agg.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
