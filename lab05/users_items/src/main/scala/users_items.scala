@@ -15,6 +15,7 @@ object users_items {
       .appName("victro_burimskiy_lab05")
       .getOrCreate()
 
+
     import spark.implicits._
 
     val update = spark.conf.get("spark.users_items.update", "1").toInt
