@@ -2,16 +2,17 @@ import java.io.File
 import java.nio.file.Paths
 
 import org.apache.spark.sql.types._
-import org.apache.spark.sql.{DataFrame, Row, SparkSession}
+import org.apache.spark.sql.{Row, SparkSession, DataFrame}
 import org.apache.spark.sql.functions._
 
 import scala.util.Try
 import scala.util.matching.Regex
 
-class users_items {
+object users_items {
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession
+    val spark: SparkSession = SparkSession
       .builder()
+      .appName("victro_burimskiy_lab05")
       .getOrCreate()
 
     import spark.implicits._

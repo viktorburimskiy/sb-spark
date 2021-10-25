@@ -1,2 +1,2 @@
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /data/home/victor.burimskiy/sb-spark/lab05/users_items/project/target/scala-2.12/sbt-1.0/classes.bak[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /data/home/victor.burimskiy/sb-spark/lab05/users_items/project/target/scala-2.12/sbt-1.0/classes.bak[0m
+[debug] Created transactional ClassFileManager with tempDir = D:\Document\Training\spark_for_de\sb-spark\lab05\users_items\project\target\scala-2.12\sbt-1.0\classes.bak
+[debug] Removing the temporary directory used for backing up class files: D:\Document\Training\spark_for_de\sb-spark\lab05\users_items\project\target\scala-2.12\sbt-1.0\classes.bak
