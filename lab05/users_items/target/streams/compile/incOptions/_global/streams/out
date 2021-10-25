@@ -1,0 +1,10 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /data/home/victor.burimskiy/sb-spark/lab05/users_items/target/scala-2.11/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users_items.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users_items$$anonfun$get_unpivot_expr$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users_items$$anonfun$get_max_sub_dir_name$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users_items$$anonfun$get_max_sub_dir_name$1$$anonfun$apply$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	users_items$$anonfun$get_max_sub_dir_name$1$$anonfun$apply$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /data/home/victor.burimskiy/sb-spark/lab05/users_items/target/scala-2.11/classes.bak[0m

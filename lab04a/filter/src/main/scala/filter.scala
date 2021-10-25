@@ -17,7 +17,7 @@ object filter {
     val topic = spark.conf.get("spark.filter.topic_name")
     val dir = spark.conf.get("spark.filter.output_dir_prefix")
 
-    if (offset != "ealiest") {
+    if (offset != "earliest") {
       offset = s"""{"$topic":{"0":$offset}}"""
     }
 
