@@ -1,2 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /mnt/hard_drive/Document/Training/sb-spark/lab04a/filter/project/target/.sbt-compilation-infos/filter-compile/.sbt-idea-lock ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /mnt/hard_drive/Document/Training/sb-spark/lab04a/filter/project/target/.sbt-compilation-infos/filter-compile/.sbt-idea-lock.[0m
+[0m[[0m[31merror[0m] [0m[0m/data/home/victor.burimskiy/sb-spark/lab04a/filter/src/main/scala/filter.scala:37:100: not found: value time_zone[0m
+[0m[[0m[31merror[0m] [0m[0m	val df_all = df.withColumn("date", date_format(to_utc_timestamp(from_unixtime('timestamp / 1000), time_zone), "yyyyMMdd"))[0m
+[0m[[0m[31merror[0m] [0m[0m	                                                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
